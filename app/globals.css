@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1d4ed8;
+  --color-brand-dark: #050a14;
+  --color-brand-card: #0a1120;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white;
+  }
+}
+
+.glass-card {
+  @apply bg-brand-card border border-white/5 rounded-xl;
+}
+
+.btn-primary {
+  @apply bg-brand-blue hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium transition-colors;
+}
+
+.btn-secondary {
+  @apply border border-white/20 hover:bg-white/5 text-white px-6 py-3 rounded-md font-medium transition-colors;
+}
